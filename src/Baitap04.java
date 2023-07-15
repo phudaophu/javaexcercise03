@@ -4,17 +4,20 @@ public class Baitap04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		// input: khai bao bien 
 		int a;
 		String rs="";
 		Scanner sc = new Scanner(System.in);
 		
 		try {
+			// kiem tra xem gia tri nhap vao phai la so nguyen kieu int 
 			System.out.println(">>> Chuong trinh nhap vao so nguyen 2 chu so - Xuat ra cach doc <<<");
 			System.out.print("Nhap vao so nguyen 2 chu so: ");
 			a = sc.nextInt();
 			sc.close();
 			
+			// processing and output 
 			if (a < 10 || a > 99) {
 				System.out.print(">>> So nguyen nhap vao ko dung yeu cau!");
 			}
@@ -42,6 +45,8 @@ public class Baitap04 {
 		}
 
 	}
+	
+	// tạo function input: số kiểu int 1 chữ số, output là chữ 
 	public static String NumberByWord(int a) {
 		if (a >= 0 && a< 10) {
 			if      (a == 1 ) return " Một";
